@@ -27,7 +27,7 @@ class TestLab(unittest.TestCase):
     def test_case_8(self):
         self.assertEqual(lab.calculate_grade(51), "D")
 
-    def test_case_0(self):
+    def test_case_9(self):
         self.assertEqual(lab.calculate_grade(48), "F")
 
 if __name__ == "__main__":
