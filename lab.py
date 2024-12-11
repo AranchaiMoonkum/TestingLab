@@ -1,11 +1,12 @@
-# Get data from Scanner
+import datetime
+
 input_name = input("Name: ")
 input_age = int(input("Christian Era: "))
 input_score = int(input("Software testing score: "))
 
 def calculate_age(input_age):
-    year = 2024
-    return year - input_age
+    current_year = datetime.datetime.now().year
+    return current_year - input_age
 
 def calculate_grade(input_score):
     if input_score >= 80:
@@ -25,8 +26,7 @@ def calculate_grade(input_score):
     elif input_score < 50:
         return "F"
 
-# Write the data to a file
-with open("lab.txt", "w") as file:
+with open("textfile.txt", "w") as file:
     file.write(f"Name: {input_name}\n")
     file.write(f"Age: {calculate_age(input_age)}\n")
     file.write(f"Software testing grade: {calculate_grade(input_score)}\n")
