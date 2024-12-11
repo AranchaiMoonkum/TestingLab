@@ -1,2 +1,4 @@
 __pycache__/
-textfile.txt
+.vscode/
+.pytest_cache/
+lab.txt
